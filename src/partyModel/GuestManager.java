@@ -8,6 +8,8 @@ package partyModel;
  *
  * */
 
+import javax.swing.*;
+
 public class GuestManager {
   /*
    * Keep ONLY the following instance variables for the class:
@@ -37,7 +39,13 @@ public class GuestManager {
     }else {
       //TODO: Implement something similar with the while loop from MainProgram
       while(flag){
+        String temp = String.valueOf(JOptionPane.showInputDialog("Can't enter guest list length below 1"));
+        if (temp.matches("-?-\\d+")){
 
+          int tempInt = Integer.parseInt(temp);
+          guestList = new Guest[tempInt];
+          flag = false;
+        }
       }
     }
   }
