@@ -20,36 +20,21 @@ public class MainProgram {
          * - JOptionPane
          * - Scanner and prompt
          */
-<<<<<<< HEAD
-        int numInt = 0;
-
-        while (numInt <= 0){
-
-            String num = JOptionPane.showInputDialog("Enter amount of people in the guest list").trim();
-
-            numInt = Integer.parseInt(num);
-        }
-
-        Controller controller = new Controller(numInt);
-=======
         int numInt;
         boolean flag = true;
-        while (flag){
+        while (flag) {
             String num = String.valueOf(JOptionPane.showInputDialog("Enter amount of people in the guest list"));
 
-            if(num.matches("\\d+")){
+            if (num.matches("\\d+")) {
 
                 numInt = Integer.parseInt(num);
                 flag = false;
 
                 Controller controller = new Controller(numInt);
             }
-            if(num.equals("null")){
+            if (num.equals("null")) {
                 flag = false;
             }
         }
-
->>>>>>> d919354 (first commit)
-
     }
 }
