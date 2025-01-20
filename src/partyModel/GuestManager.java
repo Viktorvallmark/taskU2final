@@ -29,11 +29,16 @@ public class GuestManager {
    */
 
   public GuestManager(int maxNbrOfGuests) {
-
+    boolean flag = true;
     if (maxNbrOfGuests > 0) {
 
       guestList = new Guest[maxNbrOfGuests];
 
+    }else {
+      //TODO: Implement something similar with the while loop from MainProgram
+      while(flag){
+
+      }
     }
   }
 

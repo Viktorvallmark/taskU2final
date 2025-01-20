@@ -23,7 +23,7 @@ public class MainProgram {
         int numInt;
         boolean flag = true;
         while (flag) {
-            String num = String.valueOf(JOptionPane.showInputDialog("Enter amount of people in the guest list"));
+        String num = String.valueOf(JOptionPane.showInputDialog("Enter amount of people in the guest list"));
 
             if (num.matches("\\d+")) {
 

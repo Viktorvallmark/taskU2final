@@ -156,6 +156,65 @@ public class Guest {
     return firstName;
   }
 
+  public String getAddressStreet(){
+    return getAddress().getStreet();
+  }
+
+  public void setAddressStreet(String street){
+    if (street.isBlank()){
+      getAddress().setStreet("Fakestreet");
+    }else {
+
+      getAddress().setStreet(street);
+    }
+  }
+
+
+  public String getAddressCity(){
+    return getAddress().getCity();
+  }
+
+  public void setAddressCity(String city){
+
+    if (city.isBlank()){
+      getAddress().setCity("Fakecity");
+    }else {
+
+      getAddress().setCity(city);
+    }
+  }
+
+  public String getAddressZipCode() {
+    return getAddress().getZipCode();
+  }
+
+  public void setAddressZipCode(String zipCode){
+
+    if (zipCode.isBlank()){
+      getAddress().setZipCode("Fakezipcode");
+    }else {
+
+      getAddress().setZipCode(zipCode);
+    }
+  }
+
+
+  public Countries getAddressCountry(){
+    return getAddress().getCountry();
+  }
+
+  public void setAddressCountry(Countries country){
+
+    if (country == null){
+      getAddress().setCountry(Countries.Unknown);
+    }else {
+
+      getAddress().setCountry(country);
+    }
+  }
+
+  //TODO: Add address getters and setters with error handler in setters
+
   public void setAge(int age) {
 
     if (age >= 0) {

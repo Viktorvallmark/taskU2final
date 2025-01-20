@@ -9,6 +9,8 @@ public class MainFrame extends JFrame {
   private int width = 810;
   private int height = 410;
 
+  //TODO: Add these to the class diagram
+
   Controller controller;
   MainPanel mainPanel;
 
