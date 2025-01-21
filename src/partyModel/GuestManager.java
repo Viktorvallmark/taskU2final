@@ -42,12 +42,12 @@ public class GuestManager {
         String temp = String.valueOf(JOptionPane.showInputDialog("Can't enter guest list length below 1"));
         if (temp.matches("-?\0?\\d+")){
           int tempInt = Integer.parseInt(temp);
-            if (!temp.equals("null") && (tempInt != 0)) {
+            if (!temp.equals("null") && (tempInt > 0)) {
 
                 guestList = new Guest[tempInt];
 
+                flag = false;
             }
-            flag = false;
         }
       }
     }

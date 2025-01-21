@@ -213,7 +213,6 @@ public class Guest {
     }
   }
 
-  //TODO: Add address getters and setters with error handler in setters
 
   public void setAge(int age) {
 
